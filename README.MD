@@ -9,6 +9,7 @@ Before you start, ensure you have:
 - **AWS Account**: An IAM user with permissions for S3, EC2, VPC, Load Balancer, and Admin access.
 - **VS Code**: Use GitHub Codespaces if VS Code is not installed locally.
 - **Terraform**: Installed for managing infrastructure.
+
 ## 🗂️ Table of Contents
 
 1. [Project Overview](#-project-overview)
@@ -25,8 +26,10 @@ Before you start, ensure you have:
    - [Configure Load Balancer](#10-configure-load-balancer)
    - [Outputs](#11-outputs)
    - [Validate and Apply](#12-validate-and-apply)
-3. [Challenges Faced](#-challenges-faced)
-4. [Final Notes](#-final-notes)
+3. [Troubleshooting Tips](#-troubleshooting-tips)
+4. [Documentation References](#-documentation-references)
+5. [Challenges Faced](#-challenges-faced)
+6. [Final Notes](#-final-notes)
 
 ## 🛠️ Project Overview
 
@@ -98,6 +101,24 @@ Create an IAM user with the following permissions:
 
 - Run `terraform plan` to review the deployment changes.
 - Apply the changes with `terraform apply` to finalize the setup.
+
+## 🚧 Troubleshooting Tips
+
+- **Invalid CIDR Block**: Ensure CIDR blocks are unique and properly formatted. Avoid overlapping IP ranges.
+- **RDS DB Instance Errors**: Check for supported DB instance classes and versions in the AWS RDS documentation. Update the `engine_version` and `instance_class` as needed.
+- **S3 Bucket Access Issues**: Verify bucket policies and permissions. Ensure public access settings align with your requirements.
+- **EC2 Instance Launch Failures**: Verify that the AMI IDs and instance types are valid and available in your region.
+- **Load Balancer Configuration**: Check target group health checks and listener rules to ensure proper traffic routing.
+
+## 📚 Documentation References
+
+- [Terraform Documentation](https://www.terraform.io/docs)
+- [AWS VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+- [AWS EC2 Documentation](https://docs.aws.amazon.com/ec2/index.html)
+- [AWS RDS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
+- [AWS S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+- [AWS Load Balancer Documentation](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
+
 
 ## 🚧 Challenges Faced
 
