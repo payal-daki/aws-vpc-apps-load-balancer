@@ -9,12 +9,29 @@ Before you start, ensure you have:
 - **AWS Account**: An IAM user with permissions for S3, EC2, VPC, Load Balancer, and Admin access.
 - **VS Code**: Use GitHub Codespaces if VS Code is not installed locally.
 - **Terraform**: Installed for managing infrastructure.
+## 🗂️ Table of Contents
+
+1. [Project Overview](#-project-overview)
+2. [Getting Started](#-getting-started)
+   - [Set Up IAM User](#1-set-up-iam-user)
+   - [Configure Development Environment](#2-configure-development-environment)
+   - [AWS Configuration](#3-aws-configuration)
+   - [Initialize Terraform](#4-initialize-terraform)
+   - [Define Infrastructure](#5-define-infrastructure)
+   - [Deploy Resources](#6-deploy-resources)
+   - [S3 Bucket Setup](#7-s3-bucket-setup)
+   - [Launch EC2 Instances](#8-launch-ec2-instances)
+   - [Access Verification](#9-access-verification)
+   - [Configure Load Balancer](#10-configure-load-balancer)
+   - [Outputs](#11-outputs)
+   - [Validate and Apply](#12-validate-and-apply)
+3. [Challenges Faced](#-challenges-faced)
+4. [Final Notes](#-final-notes)
 
 ## 🛠️ Project Overview
 
 This project sets up a **Virtual Private Cloud (VPC)**, deploys **2 applications** in different Availability Zones, and creates a **load balancer** to distribute traffic between instances automatically. By distributing resources across multiple Availability Zones, the application achieves high availability and auto-scaling capabilities, ensuring continuous operation even if one zone fails.
-
-## 🚀 Getting Started
+# 🚀 Getting Started
 
 ### 1. Set Up IAM User
 
