@@ -95,6 +95,3 @@ Create an IAM user with the following permissions:
 
 Ensure all configurations are correct and permissions are set appropriately to avoid access issues. By following these steps, you’ll successfully deploy a highly available and scalable three-tier architecture on AWS using Terraform.
 
----
-
-Feel free to adjust any section or add more details if necessary!
