@@ -1,6 +1,4 @@
-Here’s a refined version of your README file:
 
----
 
 # 🌐 VPC Setup with Multi-AZ Applications & Load Balancing
 
@@ -92,7 +90,3 @@ Create an IAM user with the following permissions:
 ## 📝 Final Notes
 
 Double-check all configurations and permissions to prevent access issues. Following these steps will help you successfully deploy a highly available and scalable application on AWS using Terraform.
-
----
-
-Feel free to adjust any details or add specific instructions based on your project's needs!
